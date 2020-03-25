@@ -1,0 +1,40 @@
+.header {
+    display:flex;
+    align-items: center;
+    height: 100px;
+    box-sizing: border-box;
+    padding-left: 85px;
+    padding-right: 85px;
+  
+    &__title {
+      text-decoration: none;
+      font-family: "Bebas Neue";
+      font-size: 48px;
+      justify-self: center;
+      flex:1;
+      text-align: center;
+      a {
+        color: #ff0000;
+      }
+    }
+    &__user {
+      cursor: pointer;
+      margin-left: auto;
+      padding: 10px 35px 15px 10px;
+      background-color: rgba(255, 255, 255, 0.45);
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      box-sizing: border-box;
+      transition: all, 0.5s;
+      span {
+        margin-left: 10px;
+      }
+      &:hover {
+        background-color: rgba(255, 255, 255, 1);
+        span {
+          color: #141414;
+        }
+      }
+    }
+  }

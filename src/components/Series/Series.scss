@@ -1,0 +1,96 @@
+.series {
+    box-sizing: border-box;
+    padding-left: 85px;
+    padding-right: 85px;
+    font-size: 16px;
+    min-height: 1200px;
+   .active {
+       background-color: #fff;
+   }
+   &__nav {
+       margin-bottom: 30px;
+       display: flex;
+   }
+    &__btn {
+        margin-right: 15px;
+        background-color: rgba(255, 255, 255, .45);
+        border-radius: 45px;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 10px 25px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all, .3s;
+        
+        
+        &:hover {
+            background-color: #fff;
+        }
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+    &__poster {
+        width: 300px;
+        height: 450px;
+        overflow: hidden;
+        transition: all .5s;
+        &:hover {
+            transform: scale(1.01);
+            
+        }
+    }
+    &__title {
+        text-decoration: none;
+        color: rgba(255, 255, 255, .45);
+    }
+    &__genre {
+        color: rgba(255, 255, 255, .45);
+    }
+    &__sort {
+        width: 200px;
+        cursor: pointer;
+        position: relative;
+        font-weight: bold;
+        margin-left: auto;
+        p {
+            span {
+                color: #ff0000;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__sort-by {
+        width: 190px;
+        height: 150px;
+        border-radius: 5px;
+        background-color: #484848;
+        position: absolute;
+        left: -36px;
+        top: 30px;
+        font-weight: normal;
+        z-index: 10;
+        box-sizing: border-box;
+        padding-top: 10px;
+        p {
+            
+            text-align: center;
+            box-sizing: border-box;
+            padding: 10px;
+            &:hover {
+                background-color: #ff0000;
+            }
+        }
+        .sort-by--active {
+            background-color:#ff0000;
+        }
+    }
+}

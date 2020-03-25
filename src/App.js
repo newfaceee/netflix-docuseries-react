@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import Header from "./components/Header";
+import Trending from "./components/Trending";
+import Series from "./components/Series";
+import db from "./assets/DB.json";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import SeriesItem from "./components/Series/SeriesItem";
 
-function App() {
+// наверное надо добавить в пункт log in button с classname user--login, и дать еще ему состояние user--logout
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='container'>
+      <Header/>
+        <Route exact path='/'>
+          <Trending database={db} />
+          <Series database={db} />
+        </Route>
+        <Route exact path='/series/:id'>
+          <SeriesItem database={db}/>
+        </Route>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
