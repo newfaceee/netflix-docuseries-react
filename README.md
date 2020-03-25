@@ -9,7 +9,11 @@ There is some features and stages of buiding this app, this is mostly for me
 - [x] Slider in Main Page
 - [x] Feature to filter docuseries by this categories: All, Trending, Recently Add
 - [x] Feature to sort docuseries by this categories: Users rating, IMDB rating, Release date
+
+
 --- I'm currently Here --
+
+
 - [ ]  Add  posibility to logIn, and register
 - [ ]  Add  separate pages for every docuseries
 - [ ]  Add  posibility to add commentary for every movie
